@@ -124,6 +124,11 @@ class Goblin(pygame.sprite.Sprite):
         self.surf = pygame.image.load('graphics/orc1.png')
         self.surf = pygame.transform.scale(self.surf,(56,82))
         self.rect = self.surf.get_rect()
+        print(player.rect.y)
+        print(player.rect.x)
+        self.rect.y = player.rect.y
+        self.rect.x = player.rect.x
+        
     x = 0
     y = 0
     health = 3
